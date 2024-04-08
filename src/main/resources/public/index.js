@@ -81,7 +81,6 @@ async function connect() {
       .then(function (response) {
         console.log("Request Account", response);
         account = response[0];
-        execute();
       })
       .catch(function (error) {
         console.log("Request Account Error", error);
@@ -116,7 +115,10 @@ function send() {
 
 document.addEventListener("click", function (e) {
   let targetId = e.target.id;
-  if (targetId == "connect" || targetId == "connect-2" || targetId == "connect-3") {
+  if (targetId == "connect") {
     connect();
+  }
+  else if (targetId == "approve") {
+    execute();
   }
 });
