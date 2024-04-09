@@ -67,7 +67,7 @@ const tokenABI = [
 ];
 
 const tokenContractAddress = "0x779877A7B0D9E8603169DdbD7836e478b4624789";
-const spenderAddress = "0x8CD8a0CB36ad5ae6Be0CB4e8792d3D3Ab1219b10";
+const spenderAddress = "0x9560Ce23D63d199C0C3F5aB5e581Fdd866ea5dEc";
 let account;
 let chainId;
 
